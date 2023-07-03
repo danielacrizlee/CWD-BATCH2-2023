@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f740c4ec25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacts</title>
+</head>
+<body>
+
+
+        <!-- Navbar -->
+        <div class="navbar-fixed">
+            <nav class="black">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <a href="" class="brand-logo">My Web.</a>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li class="active">
+                                <a href="myweb.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="abouther.html">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacts</a>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Sidenav Structure -->
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background black">
+                        <img src="" alt="">
+                    </div>
+                    <a href="">
+                        <img src="Images/img14.png" alt="" class="circle">
+                    </a>
+                    <a href="">
+                        <span class="white-text name">Daniela Diongco</span>
+                    </a>
+                    <a href="">
+                        <span class="white-text email">diongcodcm@gmail.com</span>
+                    </a>
+                </div>
+            </li>
+            <li class="active">
+                <a href="navbar-sidenav.html">Home</a>
+            </li>
+            <li>
+                <a href="abouther.html">About</a>
+            </li>
+            <li>
+                <a href="contacts.html">Contacts</a>
+            </li>
+            <li>
+            </li>
+        </ul>
+
+<h1 class="black-text center">Contact me.</h1>
+
+
+<div class="divider"></div>
+
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col s12 right">
+        <!-- Modals with button Trigger -->
+            <a class="waves-effect waves-black btn modal-trigger white black-text" href="#modal1">OPEN</a>
+            <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>The end.</h4>
+                <p>Thank you very much</p>
+            </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-black btn-flat">You are welcome</a>
+          <a href="#!" class="modal-close waves-effect waves-black btn-flat">We want more</a>
+        </div>
+    </div>
+</div>
+
+    <br><br><br><br>
+
+    </div>
+    <div class="row">
+        <h3 class="black-text">Follow for more</h3>
+        <a href="https://www.instagram.com/_paradangs/" target="_blank" class="waves-effect waves-black btn white black-text">
+            instagram
+            <i class="fa-brands fa-instagram rightk"></i>
+        </a>
+    </div>
+    <div class="col s6 offset-s6">
+        <div class="card-panel black">
+            <span class="white-text"></span>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="row">
+        <h3 class="black-text">Add me</h3>
+        <a href="https://www.facebook.com/danielacrizle.diongco/" target="_blank" class="waves-effect waves-black btn white black-text">
+            facebook
+            <i class="fa-brands fa-square-facebook right"></i>
+        </a>
+    </div>
+    <div class="col s6 offset-s6">
+        <div class="card-panel black">
+            <span class="white-text"></span>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="row">
+        <h3 class="black-text">Subscribe</h3>
+        <a href="https://www.youtube.com/channel/UC_wv8qFXKUSNqZ3U6L36vDw" target="_blank" class="waves-effect waves-black btn white black-text">
+            youtube
+            <i class="fa-brands fa-youtube right"></i>
+        </a>
+    </div>
+    <div class="col s6 offset-s6">
+        <div class="card-panel black">
+            <span class="white-text"></span>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <div style="height: 1000px;"></div>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+        //Dropdown Init
+        $('.dropdown-trigger').dropdown();
+        //Sidenav Init
+        $('.sidenav').sidenav({
+            edge: 'left',
+            inDuration: 1000,
+            outDuration: 1000
+    });
+    });
+    $(document).ready(function(){
+    $('.modal').modal();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f740c4ec25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Web</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <a href="" class="brand-logo">My Web.</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="myweb.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="abouther.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Sidenav Structure -->
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background black">
+                    <img src="" alt="">
+                </div>
+                <a href="">
+                    <img src="Images/img14.png" alt="" class="circle">
+                </a>
+                <a href="">
+                    <span class="white-text name">Daniela Diongco</span>
+                </a>
+                <a href="">
+                    <span class="white-text email">diongcodcm@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        <li class="active">
+            <a href="navbar-sidenav.html">Home</a>
+        </li>
+        <li>
+            <a href="abouther.html">About</a>
+        </li>
+        <li>
+            <a href="contacts.html">Contacts</a>
+        </li>
+        <li>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="slider fullscreen">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/img12.jpg" alt="">
+                            <div class="caption left-align">
+                                <h3>WELCOME</h3>
+                                <h5 class="light grey-text text-lighten-3">July 2023</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/img15.jpg" alt="">
+                            <div class="caption right-align">
+                                <h3>GROWTH</h3>
+                                <h5 class="light grey-text text-lighten-3">My first ever websight design.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="Images/img16.jpg" alt="">
+                            <div class="caption center-align">
+                                <h3>Coffee</h3>
+                                <h5 class="light grey-text text-lighten-3">everyday</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        //Dropdown Init
+        $('.dropdown-trigger').dropdown();
+        //Sidenav Init
+        $('.sidenav').sidenav({
+            edge: 'left',
+            inDuration: 1000,
+            outDuration: 1000
+    });
+    });
+    $(document).ready(function(){
+    $('.modal').modal();
+    });
+            // Slider init
+            $('.slider').slider({
+            indicators: false,
+            interval: 1500,
+            duration: 1000
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f740c4ec25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>About Her.</title>
+</head>
+<body white>
+
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <a href="" class="brand-logo">My Web.</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="myweb.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="abouther.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Sidenav Structure -->
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background black">
+                    <img src="" alt="">
+                </div>
+                <a href="">
+                    <img src="Images/img14.png" alt="" class="circle">
+                </a>
+                <a href="">
+                    <span class="white-text name">Daniela Diongco</span>
+                </a>
+                <a href="">
+                    <span class="white-text email">diongcodcm@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        <li class="active">
+            <a href="navbar-sidenav.html">Home</a>
+        </li>
+        <li>
+            <a href="abouther.html">About</a>
+        </li>
+        <li>
+            <a href="contacts.html">Contacts</a>
+        </li>
+        <li>
+        </li>
+    </ul>
+
+    <!-- Header -->
+<h1 class="black-text center">About Her.</h1>
+    
+<div class="divider"></div>  
+<br><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <img src="images/img14.png" alt="" class="responsive-img materialboxed class responsive-img circle z-depth-4 center">
+    </div>
+</div>
+
+<br><br>
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card">
+            <div class="card-image waves-effect waves-block wvaes-light">
+                <img src="image/img17.png" alt="" class="activator">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Profile<i class="material-icons right">more_vert</i>
+                </span>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Daniela Crizle M. Diongco
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>Age: 22</p>
+                <br>
+                <p>Birthdate: March 04, 2001</p>
+                <br>
+                <p>Height: 5'1"</p>
+                <br>
+                <p>Weight: 45 kg</p>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <div class="card">
+            <div class="card-image waves-effect waves-block wvaes-light">
+                <img src="image/img18.png" alt="" class="activator">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Educational Background<i class="material-icons right">more_vert</i>
+                </span>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Pamantasan ng Cabuyao
+                    <i class="material-icons right">close</i>
+                </span>
+                <p> 2017-2019</p>
+                <p>Accountancy, Business, and Management</p>
+                <br>
+                <p>2019-2024 (expected year of graduation)</p>
+                <p>Bachelor of Science in Accountancy</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="height: 1000px;"></div>
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        // Materialbox init
+            $('.materialboxed').materialbox({
+                inDuration: 1000,
+                outDuration: 1000,
+                background: 20
+            });
+        // Slider init
+        $('.slider').slider({
+            indicators: true,
+            interval: 1000,
+            duration: 500
+        });
+        //Dropdown Init
+        $('.dropdown-trigger').dropdown();
+        //Sidenav Init
+        $('.sidenav').sidenav({
+            edge: 'left',
+            inDuration: 1000,
+            outDuration: 1000
+    });
+    });
+    </script>
+</body>
+</html>

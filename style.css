@@ -1,0 +1,16 @@
+h1, h2, h3, h4, h5 {
+    font-weight: lighter;
+}
+
+.flower-img {
+    padding-top: 20px;
+}
+
+a.text-title {
+    font-weight: lighter;
+}
+
+a.text-title-ads {
+    font-size: x-small;
+    padding-left: 2px;
+}
